@@ -1,0 +1,48 @@
+.app{
+    max-width: 1440px;
+    width: 1440px;
+    margin: auto;
+    position: relative;    
+}
+
+.app__container{
+    min-width: 350px;
+    width: 1380px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;  
+}
+
+.app__title{
+    width: 235px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--bg);
+    background-color: var(--principalColor);
+    user-select: none;
+}
+
+.app__btn{
+    width: 220px;
+    height: 45px;
+    border-radius: 1rem;
+    height: 45px;
+    border: none;
+    color: var(--bg);
+    background-color: var(--letters2);
+    cursor: pointer;
+}
+
+
+:root{
+    --principalColor:#D93F3F;
+    --bg: #FFFFFF;
+    --letters2:#555A88;
+    --letters: #0F0F2D;
+}

@@ -1,0 +1,113 @@
+.form-container{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 9000;
+    background-color: #0004;
+    backdrop-filter: blur(2px);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease;
+}
+
+.form{
+    background-color: white;
+    padding: 2rem 1.5rem 2.5rem;
+    border-radius: 0.7rem;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0.2rem 0.2rem 1rem #0005;
+    position: relative;
+}
+
+.form__close{
+    transform: scaleX(0);
+}
+
+.form__title{
+    width: 190px;
+    border-radius: 1rem;
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--principalColor);
+    margin-bottom: 1rem;   
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form__x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 0.8rem;
+    right: 1.2rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.form__x:hover {
+    color: var(--principalColor);
+    transform: scale(1.2);
+}
+
+.form__section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.form__label{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    font-weight: 700;
+    color: var(--letters);
+}
+
+.form__input{
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: var(--letters);
+}
+
+.form__btn{
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--principalColor);
+    color: var(--bg);
+    cursor: pointer;
+    filter: grayscale(0.5);
+    margin-top: 2rem;
+
+}
+
+.form__btn:hover{
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+:root{
+    --principalColor:#D93F3F;
+    --bg: #FFFFFF;
+    --letters2:#555A88;
+    --letters: #0F0F2D;
+}
